@@ -160,5 +160,237 @@ margin-bottom: 1rem;
   width: 100%;
   height: 200px;
   object-fit: cover;
+  transition: transform 0.3;
 }
 
+
+
+.menu-section{
+  position: relative;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(../img/1.png);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translet (-50%, -50%);
+}
+
+.navbar {
+  padding: 1rem 3rem;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.promo-section .card {
+  border-radius: 15px;
+  padding: 2rem;
+  border: 3px solid #737373;
+  height: 100%;
+}
+
+.promo-section .card.premium {
+  border: 3px solid #000;
+  scale: 1.05;
+}
+
+.promo-section .card .price {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #000;
+  margin-top: 1rem;
+}
+
+.promo-section .card .btn {
+  background-color: transparent;
+  border: 2px solid #737373;
+  color: #000;
+  border-radius: 25px;
+}
+
+.promo-section .card .btn.dark {
+  background-color: #000;
+  color: white;
+  border: none;
+}
+
+.promo-section .card .free-day {
+  color: #336dffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.virtual-section .card,
+.office-section .card{
+  background-color: #282828;
+  color: white;
+}
+
+.virtual-section .btn,
+.office-section .btn{
+  color: #36bd00;
+}
+
+.contact-section .kiri{
+  background-color: rgb(199, 211, 211);
+  padding: 10rem 2rem;
+}
+
+.contact-section .kiri p{
+  font-size: 2rem;
+}
+
+.contact-section .kiri .btn{
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px 3rem;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.contact-section .kanan img{
+  width: 100%;
+}
+
+.footer{
+    background-color: #616057;
+    padding: 2rem 0;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.footer a:hover{
+    color: #00d9a5;
+}
+
+@media (max-width: 992px) {
+  .menu {
+    background: white;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .navbar-nav {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+  }
+
+  .me-170 {
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 8rem 1rem;
+    background-position: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 992px) {
+  .promo-section .col-md-3 {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo-section .card {
+    padding: 1.5rem;
+  }
+
+  .promo-section .card h4 {
+    font-size: 1.2rem;
+  }
+
+  .promo-section .card .price {
+    font-size: 1.5rem;
+  }
+
+  .promo-section .card ul {
+    padding-left: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .virtual-section .col-md-4,
+  .office-section .col-md-4 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .virtual-section .card,
+  .office-section .card {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-section .row {
+    flex-direction: column;
+  }
+
+  .contact-section .kiri,
+  .contact-section .kanan {
+    width: 100%;
+  }
+
+  .contact-section .kiri {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .contact-section .kiri p {
+    font-size: 1.2rem;
+  }
+
+  .contact-section .kiri img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+ 
+  .footer .col-md-3 {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer a {
+    font-size: 0.95rem;
+  }
+}
